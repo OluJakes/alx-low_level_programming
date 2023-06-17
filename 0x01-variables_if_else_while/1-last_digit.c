@@ -4,9 +4,9 @@
 
 /**
  * main - Prints the last digit of a number randomly generated 
- * and if it is greater than 5 or less than 6, or 0.
+ * and if it is greater than 5 or less than 6, or 0
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
@@ -30,7 +30,5 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n",
 			n, n % 10);
 	}
-
 	return (0);
-
 }
