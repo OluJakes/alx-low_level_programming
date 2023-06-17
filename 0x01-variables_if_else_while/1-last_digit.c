@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints the last digit of a number randomly generated 
- * and if it is greater than 5 or less than 6, or 0
+ * main - Entry point. Prints the last digit of a randomly generated number
+ * and checks if it is greater than 5, less than 6 but not 0.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
