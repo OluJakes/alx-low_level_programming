@@ -1,4 +1,4 @@
-OB#include "main.h"
+#include "main.h"
 
 /**
  * main - Entry point of thr program
