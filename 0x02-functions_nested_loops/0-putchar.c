@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point of thr program
+ * main - Entry point of the program
  *
  * Return: Always 0 (Success)
  */
@@ -9,7 +9,7 @@ int main(void)
 {
 	_putchar('_');
 	_putchar('p');
- 	_putchar('u');
+	_putchar('u');
 	_putchar('t');
 	_putchar('c');
 	_putchar('h');
