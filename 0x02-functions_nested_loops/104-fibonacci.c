@@ -1,26 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the first 98 Fibonacci numbers
+ * main - finds and prints the sum of even-valued Fibonacci numbers
+ *        that do not exceed 4,000,000
  * Return: 0
  */
 int main(void)
 {
-	unsigned long int num1 = 1, num2 = 2, next;
-	int count;
-
-	printf("%lu, %lu", num1, num2);
-
-	for (count = 3; count <= 98; count++)
+	int num1 = 1, num2 = 2, next;
+	int sum = 2; // Start with 2 as the sum (accounting for the initial even number)
+	
+	while (num2 <= 4000000)
 	{
 		next = num1 + num2;
-		printf(", %lu", next);
+		
+		if (next % 2 == 0)
+			sum += next;
+		
 		num1 = num2;
 		num2 = next;
 	}
-
-	printf("\n");
-
+	
+	printf("%d\n", sum);
+	
 	return (0);
 }
 
