@@ -8,8 +8,8 @@
 int main(void)
 {
 	int num1 = 1, num2 = 2, next;
-	int sum = 2; // Start with 2 as the sum (accounting for the initial even number)
-	
+	int sum = 2;
+
 	while (num2 <= 4000000)
 	{
 		next = num1 + num2;
