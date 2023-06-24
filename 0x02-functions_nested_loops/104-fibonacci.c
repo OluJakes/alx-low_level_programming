@@ -6,20 +6,21 @@
  */
 int main(void)
 {
-    int i;
-    unsigned long int current = 1, prev = 0, temp;
+	unsigned long int num1 = 1, num2 = 2, next;
+	int count;
 
-    for (i = 0; i < 98; i++)
-    {
-        printf("%lu, ", current);
+	printf("%lu, %lu", num1, num2);
 
-        temp = current;
-        current += prev;
-        prev = temp;
-    }
+	for (count = 3; count <= 98; count++)
+	{
+		next = num1 + num2;
+		printf(", %lu", next);
+		num1 = num2;
+		num2 = next;
+	}
 
-    printf("%lu\n", current);
+	printf("\n");
 
-    return 0;
+	return (0);
 }
 
