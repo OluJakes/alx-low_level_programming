@@ -6,25 +6,22 @@
  */
 int main(void)
 {
-    int i;
-    long long int num1 = 1, num2 = 2, next;
+	int count;
+	long num1 = 1, num2 = 2, next;
 
-    printf("%lld, %lld, ", num1, num2);
+	printf("%ld, %ld", num1, num2);
 
-    for (i = 3; i <= 50; i++)
-    {
-        next = num1 + num2;
-        printf("%lld", next);
+	for (count = 3; count <= 50; count++)
+	{
+		next = num1 + num2;
+		printf(", %ld", next);
+		num1 = num2;
+		num2 = next;
+	}
 
-        if (i != 50)
-            printf(", ");
+	printf("\n");
 
-        num1 = num2;
-        num2 = next;
-    }
-
-    printf("\n");
-
-    return 0;
+	return (0);
 }
+
 
