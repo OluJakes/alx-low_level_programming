@@ -1,26 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of even-valued terms in the Fibonacci sequence
+ * main - finds and prints the sum of even-valued Fibonacci terms
+ *        not exceeding 4,000,000
  * Return: 0
  */
 int main(void)
 {
-    int i;
-    unsigned long int current = 1, prev = 0, temp, sum = 0;
+	int prev = 1;
+	int curr = 2;
+	int next = 0;
+	int sum = 2;
 
-    while (current <= 4000000)
-    {
-        if (current % 2 == 0)
-            sum += current;
+	while (next <= 4000000)
+	{
+		next = prev + curr;
+		if (next % 2 == 0)
+			sum += next;
 
-        temp = current;
-        current += prev;
-        prev = temp;
-    }
+		prev = curr;
+		curr = next;
+	}
 
-    printf("%lu\n", sum);
+	printf("%d\n", sum);
 
-    return (0);
+	return (0);
 }
 
