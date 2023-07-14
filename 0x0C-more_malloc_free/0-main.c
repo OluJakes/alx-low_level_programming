@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-    char *c;
+	char *c;
     int *i;
     float *f;
     double *d;
