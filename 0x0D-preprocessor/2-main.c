@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point of the program
+ * main - prints the name of the file
  *
- * Return: 0 on success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("2-main.c\n");
+	printf("%s\n", __FILE__);
 	return (0);
 }
 
