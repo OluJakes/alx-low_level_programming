@@ -52,4 +52,4 @@ Write a program that displays the information contained in the ELF header of an 
 
 ## Author
 
-Written by [Olumide Solanke] for [ALX School](https://www.alx.org/).
+Written by Olumide Solanke for [ALX School](https://www.alx.org/).
